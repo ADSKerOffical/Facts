@@ -1,0 +1,6 @@
+• Tor сайты:
+      ! Все эти сайты ты можешь использовать только в tor browser
+      ! Все имена доменов это захешированное имя
+      
+      The hidden wiki: wiki6dtqpuvwtc5hopuj33eeavwa6sik7sy57cor35chkx5nrbmmolqd.onion
+      TorDex: tordexpmg4xy32rfp4ovnz7zq5ujoejwq2u26uxxtkscgo5u3losmeid.onion
