@@ -1,0 +1,97 @@
+• Тригонометрические функции:
+
+     Синус (sin)
+     
+        Тригонометрическое тождество: sin²(x) + cos²(x) = 1
+         sin(-x) = -sin(x)
+         sin(arcsin(x)) = x || если x ∈ [-1;1]
+         sin(x) = ±sqrt(1 - cos²(x)) |? зависит от знака x
+         sin(x) = e ^ ix - e ^ -ix / 2i
+         sin(x) = cos(π/2 - x) = -cos(π/2 + x)
+         sin(x) = ±sqrt(1 - cos(2x) / 2) |? зависит от знака x
+         sin(x) = 1 / csc(x)
+         sin(π - x) = sin(x)
+         sin(π) = 0
+         sin(x) = i × sinh(x)
+         sin(2π + x) = sin(x) || это работает с sin, cos, tg и ctg
+         Теорема синусов: a / sin(A) = b / sin(B) = c / sin(C) = 2R
+         
+     Косинус (cos)
+     
+         Теорема косинусов (найти любую сторону треугольника): c² = a² + b² - 2ab × cos(γ)
+         cos(-x) = cos(x)
+         cos(x) + isin(x) = e ^ ix
+         cos(arccos(x)) = x || если x ∈ [0;π]
+         cos(x) = e ^ ix + e ^ -ix / 2
+         cos(x) = ±sqrt(1 - sin²(x)) |? зависит от знака x
+         cos(x) = 1 - 2sin²(x/2)
+         cos(x) = sin(x + π / 2) = -i × sin(ix)
+         cos(arcsin(x)) = sqrt(1 - x²)
+         cos(π - x) = -cos(x) || для cos, tg и ctg это будет отрицательно
+         cos(x) = cosh(ix)
+        
+     Тангенс (tg, tan)
+     
+        tg(x) = sin(x) / cos(x)
+        tg(x) × ctg(x) = 1
+        tg(-x) = -tg(x)
+        tg(x + π) = tg(x)
+        tg(x) = -i × th(ix)
+        tg(x) × ctg(x) = 1
+        tg(arctg(x)) = x || для любых значений
+        tg(x) = e ^ ix - e ^ -ix / i(e ^ ix + e ^ -ix) = -i × (e ^ 2ix - 1 / e ^ 2ix + 1)
+        
+     Котангенс (ctg, cot)
+     
+        ctg(x) = cos(x) / sin(x)
+        ctg(-x) = -ctg(x)
+        ctg(x) = 1 / tg(x)
+        ctg(x) = ±sqrt(1 - sin²x) / sin(x) = ±cos(x) / sqrt(1 - cos²x) || зависит от знака х
+        ctg(x) = ±sqrt(csc²x - 1) = ±1 / sqrt(sec²x - 1)
+        Тригонометрическое представление называется котангенсоидой
+        
+     Арксинус (arcsin) – обратная функция для синуса
+     
+         arcsin(-x) = arcsin(x)
+         arcsin(x) + arccos(x) = π / 2
+         arcsin(x) = arctg(x / sqrt(1 - x²)) || если x > 0
+         arcsin(sin(x)) = x || при x ∈ [-π/2 ; π/2]
+         arcsin(x) = -i × sinh(ix)
+         arcsin(x) = -i × ln(ix + sqrt(1 - x²))
+     
+     Арккосинус (arccos) – обратная функция для косинуса
+     
+         arccos(-x) = π - arccos(x)
+         arccos(cos(x)) = x || если 0 ≤ x ≤ π
+         arccos(x) + arccos(-x) = π
+         arccos(x) = arcsin(sqrt(1 - x²)) || при 0 ≤ x ≤ 1
+         arccos(x) = arctg(sqrt(1 - x²) / x) || при x > 0
+     
+     Секанс (sec, sc) – это число обратное косинусу: 1 / cos(x)
+     
+         sec²(x) = 1 + tan²(x)
+     
+     Косеканс (csc, cosec, csec, cosc) – это число обратное синусу
+     
+         csc(x) = 1 / sin(x)
+         csc²(x) = 1 + cot²(x)
+         
+     Арксеканс (arcsec)
+     
+     Версинус (versin) – равен: 1 - cos(x)
+     
+     Коверсинус (vercos) – равен: 1 - sin(x)
+     
+     Гаверсинус (hav, haversin)
+     
+        hav(θ) = 1 - cos(θ) / 2
+     
+     Гиперболический синус (sinh, sh)
+     
+     Гиперболический косинус (cosh, ch)
+     
+         cosh(x) = e^x + e^(-x) / 2
+     
+     Гиперболический тангенс (tanh, th)
+     
+     Гиперболический котангенс (coth, cth)
