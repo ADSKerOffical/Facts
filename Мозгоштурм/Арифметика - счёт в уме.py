@@ -12,6 +12,11 @@ from math import *
    summod(x) – сумма всех делителей (∑ [d ∈ {x∈N|x|n}] d)
 """
 
+operat = globals().get("operations", 2)
+charsj = globals().get("oper_chars", ["+", "-", "×", "//", "sqrt", "abs", "log"])
+minum = globals().get("minnum", 0)
+manum = globals().get("maxnum", 15)
+
 def get_log_base(n):
     if n <= 1:
         return n
@@ -45,7 +50,7 @@ def summod(n):
 
 
 
-def calculate(operations=2, oper_chars=["+", "-", "×", "//", "sqrt", "abs", "log"], maxnum=15, minnum=0, **kwargs):
+def calculate(operations=operat, oper_chars=charsj, maxnum=manum, minnum=minum, **kwargs):
     operations = kwargs.get("operations", operations)
     oper_chars = kwargs.get("oper_chars", oper_chars)
     maxnum = kwargs.get("maxnum", maxnum)
@@ -87,4 +92,4 @@ def calculate(operations=2, oper_chars=["+", "-", "×", "//", "sqrt", "abs", "lo
     else:
         print(f"   Это не правильно, правильный ответ: {answer}")
     calculate(operations, oper_chars, maxnum, minnum)
-calculate(4)
+calculate(operat, charsj, manum, minum)
