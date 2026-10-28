@@ -1,5 +1,5 @@
 leve = globals().get('level', 1)
-word = globals().get('level', 3)
+word = globals().get('words', 3)
 
 def memory_letters(level=leve, words=word):
     import random, os, string
