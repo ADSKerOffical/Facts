@@ -25,9 +25,12 @@ def memory_letters(level=leve, words=word):
        word = " ".join(fullw)
     elif level <= 1:
         word = random.choice(letters_lv2)
-    input(f"Запомни эти слова: '{word}'. После пробела перепеши их снова")
+    kakaka = input(f"Запомни эти слова: '{word}'. После пробела перепеши их снова")
     clear()
     word = word.translate(str.maketrans("", "", string.punctuation)).lower().replace("ё", "е")
+    if kakaka == "_QUIT" or kakaka == "_EXIT":
+        print("Выход из режима")
+        sys.exit(0)
     result = input("Какие слова были до этого? ").translate(str.maketrans("", "", string.punctuation)).lower().replace("ё", "е")
     if result == word:
         print("Это абсолютно правильно")
