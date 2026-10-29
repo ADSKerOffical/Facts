@@ -1,3 +1,5 @@
+import sys, os
+
 leve = globals().get('level', 1)
 word = globals().get('words', 3)
 
@@ -29,6 +31,9 @@ def memory_letters(level=leve, words=word):
     result = input("Какие слова были до этого? ").translate(str.maketrans("", "", string.punctuation)).lower().replace("ё", "е")
     if result == word:
         print("Это абсолютно правильно")
+    elif result == "_QUIT" or result == "_EXIT":
+        print("Выход из режима")
+        sys.exit(0)
     else:
         print(f"Это не совсем правильно. Правильные слова: {word}")
     memory_letters(level, words)
