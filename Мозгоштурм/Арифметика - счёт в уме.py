@@ -1,4 +1,4 @@
-import math, random
+import math, random, sys, os
 from math import *
 # В РАЗРАБОТКЕ
 
@@ -89,6 +89,12 @@ def calculate(operations=operat, oper_chars=charsj, maxnum=manum, minnum=minum, 
     
     if result == str(answer):
         print("   Это правильно")
+    elif result == "_QUIT":
+        print("Выход из режима")
+        sys.exit(0)
+    elif result == "_CLEAR":
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("\033[H\033[2J", end="")
     else:
         print(f"   Это не правильно, правильный ответ: {answer}")
     calculate(operations, oper_chars, maxnum, minnum)
