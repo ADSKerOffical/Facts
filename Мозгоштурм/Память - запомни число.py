@@ -1,9 +1,4 @@
-"""
-   Просто запомни цифры и напиши их
-   У меня, кстати, благодаря этому усилился эйдетизм, на удивление
-"""
-
-import os
+import os, sys
 def lev(s1, s2):
     matrix = [[0] * (len(s2) + 1) for _ in range(len(s1) + 1)]
     
@@ -27,7 +22,9 @@ def lev(s1, s2):
             
     return matrix[len(s1)][len(s2)]
 
-def memory_digits(maxlen=10):
+maxle = globals().get("maxlen", 6)
+
+def memory_digits(maxlen=maxle):
     import random
     nums = []
     
@@ -43,7 +40,10 @@ def memory_digits(maxlen=10):
     result = input("\r" + " " * len(text) + "\rКакие цифры были до этого? ")
     if lev(result, nums) >= 1:
         print(f"Ты написал цифры с {lev(result, nums)} ошибками\n", end="", flush=True)
+    elif result == "_QUIT" or result == "_EXIT":
+        print("Выход из режима")
+        sys.exit(0)
     else:
         print("Ты написал все цифры без ошибок\n", end="", flush=True)
     memory_digits(maxlen)
-memory_digits(7)
+memory_digits(maxle)
