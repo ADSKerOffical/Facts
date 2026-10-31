@@ -1,7 +1,7 @@
 """
    Это задачи с использованием эффекта Струпа. Пока что находится в разработке (второй режим)
 """
-import sys
+import sys, os
 def rhemisphere_effstrupe():
     import random
     colors = {"красный": "91m", "оранжевый": "93m", "желтый": "93m", "зеленый": "92m", "голубой": "96m", "синий": "94m", "фиолетовый": "95m", "коричневый": "38;5;94m", "серый": "38;5;244m"}
@@ -17,6 +17,11 @@ def rhemisphere_effstrupe():
     elif result == "_QUIT" or result == "_EXIT":
       print("Завершение режима")
       sys.exit(0)
+    elif result == "_CLEAR":
+       try:
+            os.system("clear")
+        except Exception:
+            os.system("cls")
     else:
        print("  Это не верно")
     rhemisphere_effstrupe()
